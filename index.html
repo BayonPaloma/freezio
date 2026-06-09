@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Alquiler de freezers y heladeras para cumpleaños, eventos y catering. Entrega y retiro a domicilio en Zárate, Campana, Escobar, Pilar, Tigre y Zona Norte."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/52b07557be.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="apple-touch-icon" href="./assets/favicon/apple-touch-icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Freezio | Alquiler de Freezers y Heladeras para Eventos</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Abrir menú de navegación"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+          <ul>
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#envios">Envíos</a></li>
+            <li><a href="#pasos">Cómo funciona</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <div id="menuOverlay" class="menu-overlay"></div>
+      </header>
+      <section id="hero">
+        <div class="hero-content">
+          <img src="./assets/img/logo.png" alt="Logo de Freezio" />
+          <h1><span>Alquiler de</span> Freezers y Heladeras</h1>
+          <h3>
+            Entregamos, retiramos y te ayudamos a mantener todo frío
+            <span>cuando lo necesitás</span>.
+          </h3>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5491159899156&text=Hola+Freezio%21+Vi+tu+p%C3%A1gina+web+y+quer%C3%ADa+pedirte+un+presupuesto.&type=phone_number&app_absent=0"
+            target="_blank"
+            class="boton btn-hero"
+          >
+            <i class="fa-brands fa-whatsapp"></i>Solicitar presupuesto
+          </a>
+        </div>
+      </section>
+      <section class="barra">
+        <div class="tarjeta">
+          <img src="./assets/img/barra_ubicacion.png" alt="UbicaciÓn" />
+          <h3>Ubicados en Zárate</h3>
+        </div>
+        <div class="tarjeta">
+          <img src="./assets/img/barra_camion.png" alt="Camión" />
+          <h3>Envíos a domicilio</h3>
+        </div>
+        <div class="tarjeta">
+          <img src="./assets/img/batta_mensaje.png" alt="Mensajes" />
+          <h3>Atención personalizada</h3>
+        </div>
+        <div class="tarjeta">
+          <img src="./assets/img/barra_nieve.png" alt="Copo de nieve" />
+          <h3>Equipos listos para usar</h3>
+        </div>
+      </section>
+      <section id="envios">
+        <h1>Estamos ubicados en Zárate</h1>
+        <h3>Ofrecemos envíos gratis en un radio de 20 km</h3>
+        <h3>Luego, se agrega un adicional por kilómetro recorrido</h3>
+        <a
+          href="https://api.whatsapp.com/send/?phone=5491159899156&text=Hola+Freezio%21+Vi+tu+p%C3%A1gina+web+y+quer%C3%ADa+pedirte+un+presupuesto.&type=phone_number&app_absent=0"
+          target="_blank"
+          class="boton btn-envios"
+        >
+          <i class="fa-brands fa-whatsapp"></i>Cotizar traslado
+        </a>
+      </section>
+      <section id="pasos">
+        <div class="contenedor-timeline">
+          <div class="timeline-line"></div>
+          <ul class="timeline-points">
+            <li class="point" data-step="1">
+              <span class="point-number">1</span>
+            </li>
+            <li class="point" data-step="2">
+              <span class="point-number">2</span>
+            </li>
+            <li class="point" data-step="3">
+              <span class="point-number">3</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="steps-container">
+          <div class="step-card" data-step="1">
+            <h3>Contacto</h3>
+            <p>
+              Envianos un WhatsApp para que te asesoremos. Nos contás qué
+              necesitás y para cuándo.
+            </p>
+          </div>
+          <div class="step-card" data-step="2">
+            <h3>Reserva</h3>
+            <p>
+              Una vez aprobado el presupuesto, dejamos todo listo para la fecha
+              acordada.
+            </p>
+          </div>
+          <div class="step-card" data-step="3">
+            <h3>¡Listo!</h3>
+            <p>
+              Disfrutás del evento sin preocuparte por el espacio de frío. Al
+              finalizar el evento pasamos a retirarlo.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contacto">
+        <div class="separador"></div>
+        <h1>Hablemos</h1>
+        <h3>Contanos qué necesitás y nos ocupamos del resto.</h3>
+        <p>Una solución simple cuando necesitás más espacio de frío</p>
+        <div class="form-container">
+          <form
+            action="https://formsubmit.co/alquilo.frezzio@gmail.com"
+            method="POST"
+          >
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Nombre"
+                required
+              />
+            </div>
+            <div class="fila">
+              <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                  placeholder="Teléfono"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group mensaje">
+              <label for="texto"
+                >Mensaje <span class="opcional">(Opcional)</span></label
+              >
+              <textarea
+                id="texto"
+                name="mensaje"
+                placeholder="Escribí tu mensaje"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Enviar</button>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/" />
+            <input type="hidden" name="_captcha" value="false" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="col1">
+        <div class="logo-nombre">
+          <img src="./assets/img/logo.png" alt="Logo Freezio" />
+          <h3>F R E E Z I O</h3>
+        </div>
+        <p>
+          Alquiler de freezers y heladeras en Zárate, Campana, Escobar,
+          Cardales, Pilar, Tigre, Zona Norte y CABA.
+        </p>
+      </div>
+      <div class="navegacion">
+        <h3>Navegación</h3>
+        <ul>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#envios">Envíos</a></li>
+          <li><a href="#pasos">Cómo funciona</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="contacto-foot">
+        <h3>Contacto</h3>
+        <a
+          href="https://wa.me/5491159899156?text=Hola%20Freezio!%20Vi%20tu%20p%C3%A1gina%20web%20y%20quer%C3%ADa%20hacerte%20una%20consulta."
+          target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i>+54 9 11 5989-9156</a
+        >
+        <a href="https://www.instagram.com/alquileres.freezio/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i>alquileres.freezio</a
+        >
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=alquilo.frezzio@gmail.com&su=Consulta+Freezio"
+          target="_blank"
+        >
+          <i class="fa-regular fa-envelope"></i> alquilo.frezzio@gmail.com
+        </a>
+      </div>
+      <div class="copyright">
+        © 2026 Freezio. Todos los derechos reservados.
+      </div>
+    </footer>
+    <script src="./script.js" defer></script>
+    <div id="customPopup" class="popup-overlay">
+      <div class="popup-content">
+        <div class="popup-icon">
+          <i class="fa-regular fa-circle-check"></i>
+        </div>
+        <h2>¡Mensaje Enviado!</h2>
+        <p>
+          Gracias por comunicarte con Freezio. En breve nos pondremos en
+          contacto con vos.
+        </p>
+        <button id="closePopup" class="btn-popup-close">Entendido</button>
+      </div>
+    </div>
+  </body>
+</html>
