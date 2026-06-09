@@ -1,34 +1,29 @@
 const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.getElementById("navMenu");
-const menuOverlay = document.getElementById("menuOverlay"); // Capturamos la capa
+const menuOverlay = document.getElementById("menuOverlay"); 
 const menuLinks = document.querySelectorAll(".nav-menu a");
 
-// Función auxiliar para abrir/cerrar todo junto
 function toggleMenu() {
   navMenu.classList.toggle("active");
   menuOverlay.classList.toggle("active");
 }
 
-// Función auxiliar para cerrar todo
 function closeMenu() {
   navMenu.classList.remove("active");
   menuOverlay.classList.remove("active");
 }
 
-// Al hacer clic en el botón de hamburguesa
 menuToggle.addEventListener("click", (event) => {
   toggleMenu();
   event.stopPropagation();
 });
 
-// Al hacer clic en los enlaces del menú
 menuLinks.forEach((link) => {
   link.addEventListener("click", () => {
     closeMenu();
   });
 });
 
-// ¡Mucho más simple! Si clican en la capa protectora, se cierra el menú
 menuOverlay.addEventListener("click", () => {
   closeMenu();
 });
@@ -38,11 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const points = document.querySelectorAll(".point");
 
   cards.forEach((card) => {
-    // Cuando el mouse entra a la tarjeta
     card.addEventListener("mouseenter", () => {
       const stepNumber = card.getAttribute("data-step");
 
-      // Buscamos el punto que tenga el mismo data-step y le sumamos la clase active
       const correspondingPoint = document.querySelector(
         `.point[data-step="${stepNumber}"]`,
       );
@@ -51,7 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // Cuando el mouse sale de la tarjeta
     card.addEventListener("mouseleave", () => {
       const stepNumber = card.getAttribute("data-step");
 
@@ -129,12 +121,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     closePopupBtn.addEventListener("click", () => {
-      popup.classList.remove("show");
-
-      const nextInput = form.querySelector('input[name="_next"]');
-      if (nextInput && nextInput.value) {
-        window.location.href = nextInput.value;
-      }
-    });
+  popup.classList.remove("show");
+  
+  if (window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost") {
+    window.location.href = "http://127.0.0.1:5500/";
+  } else {
+    window.location.href = window.location.origin + window.location.pathname;
   }
+});
 });
