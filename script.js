@@ -1,6 +1,6 @@
 const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.getElementById("navMenu");
-const menuOverlay = document.getElementById("menuOverlay"); 
+const menuOverlay = document.getElementById("menuOverlay");
 const menuLinks = document.querySelectorAll(".nav-menu a");
 
 function toggleMenu() {
@@ -121,17 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     closePopupBtn.addEventListener("click", () => {
-      popup.classList.remove("show");
-
-      if (
-        window.location.hostname === "127.0.0.1" ||
-        window.location.hostname === "localhost"
-      ) {
-        window.location.href = "http://127.0.0.1:5500/";
-      } else {
-        window.location.href =
-          window.location.origin + window.location.pathname;
-      }
+      window.location.href = "/";
     });
   }
 });
