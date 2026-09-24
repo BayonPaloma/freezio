@@ -628,6 +628,10 @@ footer .contacto-foot a:hover {
   margin-left: 60px;
 }
 
+.copyright a {
+  text-decoration: underline;
+}
+
 .reveal-hidden {
   opacity: 0;
   transform: translateY(30px);
