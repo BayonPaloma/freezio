@@ -630,10 +630,12 @@ footer .contacto-foot a:hover {
 
 .copyright {
   margin-left: 60px;
+  grid-column: 1 / -1;
 }
 
 .copyright a {
   text-decoration: underline;
+  color: white;
 }
 
 .reveal-hidden {
