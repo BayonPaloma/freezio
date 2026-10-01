@@ -274,14 +274,6 @@ a {
   margin-bottom: 10px;
 }
 
-:root {
-  --primary-glow: #6cd2d8;
-  --accent-orange: #ffac44;
-  --neutral-light: #6cd2d8;
-  --bg-card: rgba(255, 255, 255, 0.08);
-  --line-color: #e0e6ed;
-}
-
 #envios {
   height: 80vh;
   background-image:
@@ -300,6 +292,10 @@ a {
   align-items: center;
 
   padding: 10px;
+}
+
+#envios h2 {
+  font-size: 32px;
 }
 
 #envios h3 {
@@ -321,9 +317,13 @@ a {
 }
 
 #pasos {
+  background-color: #eef2f376;
+}
+
+.cuadro {
   max-width: 800px;
-  margin: 60px auto;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 80px 20px;
 }
 
 .contenedor-timeline {
@@ -338,7 +338,7 @@ a {
   left: 40px;
   right: 40px;
   height: 2px;
-  background-color: var(--line-color);
+  background-color: #e0e6ed;
   transform: translateY(-50%);
   z-index: 1;
 }
@@ -358,13 +358,13 @@ a {
   width: 40px;
   height: 40px;
   background-color: #fff;
-  border: 2px solid var(--line-color);
+  border: 2px solid #e0e6ed;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  color: var(--neutral-light);
+  color: #6cd2d8;
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
@@ -374,8 +374,8 @@ a {
 }
 
 .point.active {
-  background-color: var(--primary-glow);
-  border-color: var(--primary-glow);
+  background-color: #6cd2d8;
+  border-color: #6cd2d8;
   color: #fff;
   transform: scale(1.2);
   box-shadow: 0 0 15px #6cd2d8;
@@ -392,7 +392,7 @@ a {
 
 .step-card {
   flex: 1;
-  background: var(--bg-card);
+  background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(133, 158, 250, 0.2);
   border-radius: 12px;
   padding: 24px;
@@ -402,14 +402,14 @@ a {
 
 .step-card:hover {
   transform: translateY(-5px);
-  border-color: var(--primary-glow);
+  border-color: #6cd2d8;
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 10px 20px rgba(84, 122, 254, 0.05);
 }
 
 .step-card h3 {
   margin-top: 0;
-  color: var(--primary-glow);
+  color: #6cd2d8;
   font-size: 18px;
   margin-bottom: 12px;
 }
@@ -425,6 +425,10 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#contacto h2 {
+  font-size: 32px;
 }
 
 form {
