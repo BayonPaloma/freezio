@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   const elementsToAnimate = document.querySelectorAll(
-    ".tarjeta, .step-card, #envios h1, #envios h3",
+    ".tarjeta, .step-card, #envios h1, #envios h3, .resenas h2, .resenas-header p, .resena-card",
   );
 
   elementsToAnimate.forEach((el) => {

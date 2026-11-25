@@ -421,6 +421,154 @@ a {
   margin: 0;
 }
 
+.resenas {
+  background-color: #f5f7f4;
+  padding: 90px 24px;
+}
+
+.resenas-contenedor {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.resenas-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.resenas-header h2 {
+  color: #507e81;
+  font-size: 36px;
+  margin: 12px 0;
+}
+
+.resenas-header p {
+  color: #64746c;
+  font-size: 17px;
+}
+
+.resenas-puntuacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.google-logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4285f4;
+}
+
+.resenas-puntuacion strong {
+  font-size: 28px;
+  color: #183d32;
+}
+
+.estrellas {
+  color: #f5a623;
+  font-size: 19px;
+  letter-spacing: 2px;
+}
+
+.cantidad-resenas {
+  color: #64746c;
+  font-size: 14px;
+}
+
+.resenas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.resena-card {
+  background: white;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.resena-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.09);
+}
+
+.resena-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.resena-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #f0feff;
+  color: #507e81;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.resena-top h3 {
+  color: #183d32;
+  font-size: 15px;
+  margin: 0 0 4px;
+}
+
+.resena-fecha {
+  color: #89958e;
+  font-size: 12px;
+}
+
+.google-icon {
+  margin-left: auto;
+  font-size: 20px;
+  font-weight: 700;
+  color: #4285f4;
+}
+
+.resena-card p {
+  color: #52635a;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 12px 0 0;
+}
+
+.resenas-link {
+  display: block;
+  width: fit-content;
+  margin: 40px auto 0;
+  padding: 14px 26px;
+  border: 2px solid #507e81;
+  border-radius: 30px;
+  color: #507e81;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.resenas-link:hover {
+  background: #6cd2d8;
+  border: 2px solid #57b2b6;
+
+  color: white;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+}
+
 #contacto {
   display: flex;
   flex-direction: column;
@@ -750,6 +898,12 @@ footer .contacto-foot a:hover {
   }
 }
 
+@media (max-width: 900px) {
+  .resenas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   #hero {
     background-image: url("./assets/img/fondo_mobile.webp");
@@ -821,6 +975,36 @@ footer .contacto-foot a:hover {
     justify-content: center;
 
     font-weight: bold;
+  }
+
+  .resenas {
+    padding: 60px 18px;
+  }
+
+  .resenas-header {
+    margin-bottom: 35px;
+  }
+
+  .resenas-header h2 {
+    font-size: 28px;
+  }
+
+  .resenas-header p {
+    font-size: 15px;
+  }
+
+  .resenas-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .resena-card {
+    padding: 23px;
+  }
+
+  .resenas-link {
+    margin-top: 30px;
+    font-size: 14px;
   }
 
   .form-container {
